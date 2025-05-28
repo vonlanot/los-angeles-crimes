@@ -15,7 +15,7 @@ The primary goals of this analysis are to:
 * Provide data-driven insights that could potentially inform community safety initiatives or resource allocation.
 
 ## Data Source
-The dataset used in this project is the "Los Angeles Crime Data from 2020" provided by the Los Angeles Police Department (LAPD) via an data.gov.
+The dataset used in this project is the "Los Angeles Crime Data from 2020" provided by the Los Angeles Police Department (LAPD) via [data.gov](https://catalog.data.gov/dataset/crime-data-from-2020-to-present).
 
 **Important Data Notes:**
 * This data is transcribed from original paper crime reports and may contain some inaccuracies.
@@ -34,7 +34,7 @@ The dataset used in this project is the "Los Angeles Crime Data from 2020" provi
 *(This section will be populated once the analysis is complete. It will summarize the main discoveries, trends, and significant observations from the data.)*
 
 ## Google Colab Notebook
-[Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)]
+[Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)
 
 ## How to Explore
 1.  Click on the "Link to Live Colab Notebook" above.
