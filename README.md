@@ -44,6 +44,9 @@ An examination of crime descriptions revealed the most common offenses reported 
 
 **Crime Trends Over Time (2020-2023):**
 Analyzing monthly crime trends for each year provides a visual understanding of shifts in reported incidents:
+
+![Monthly Crime Trends in Los Angeles (2020-2023)](Monthly_Crime_Trends_LA.png)
+
 * **Overall Increase followed by a Slight Decline:** The graph clearly illustrates that crime counts in **2022 (green line)** and **2023 (yellow line)** are consistently higher across most months compared to **2020 (black line)** and **2021 (blue line)**. This indicates a general upward trend in reported crimes from the earlier years, peaking in 2022, followed by a slight moderation in 2023.
 * **Limited Consistent Monthly Seasonality:** While minor fluctuations are visible, the plot does not reveal a strong, repeatable seasonal pattern across all years (e.g., a distinct, consistent peak or trough month). This suggests that while subtle influences might be present, they aren't the primary drivers of overall crime volume in Los Angeles during this period.
 * **Year-Specific Observations:**
