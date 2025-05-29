@@ -31,7 +31,14 @@ The dataset used in this project is the "Los Angeles Crime Data from 2020" provi
 * **(Potentially others as needed):** e.g., Plotly for interactive visualizations, SciPy for statistical tests.
 
 ## Key Findings & Insights (To be updated)
-*(This section will be populated once the analysis is complete. It will summarize the main discoveries, trends, and significant observations from the data.)*
+
+### Most Prevalent Crime Types
+
+An examination of crime descriptions revealed the most common offenses reported in Los Angeles:
+
+* The data indicates a strong prevalence of **property-related crimes**. **"VEHICLE - STOLEN"** is the most frequent, accounting for $\approx 11.47\%$ of all reported crimes. This is followed by **"BATTERY - SIMPLE ASSAULT,"** **"BURGLARY FROM VEHICLE,"** and **"THEFT OF IDENTITY."**
+* While property crimes dominate the top ranks, the significant presence of various **assault types** highlights areas of concern beyond just property loss. These include **"BATTERY - SIMPLE ASSAULT,"** **"ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT,"** and **"INTIMATE PARTNER - SIMPLE ASSAULT."**
+
 
 ## Google Colab Notebook
 [Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)
