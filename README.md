@@ -18,7 +18,7 @@ The primary goals of this analysis are to:
 The dataset used in this project is the "Los Angeles Crime Data from 2020" provided by the Los Angeles Police Department (LAPD) via [data.gov](https://catalog.data.gov/dataset/crime-data-from-2020-to-present).
 
 **Important Data Notes:**
-* This data is transcribed from original paper crime reports and may contain some inaccuracies.
+* The data is transcribed from original paper crime reports and may contain some inaccuracies.
 * Some location fields with missing data are noted as `(0°, 0°)`. These will require careful handling during analysis.
 * Address fields are provided only to the nearest hundred block to maintain privacy.
 
