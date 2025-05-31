@@ -86,6 +86,7 @@ The "Central" area, encompassing Downtown Los Angeles, exhibits the highest crim
 To visually complement this analysis, a geographical heatmap was generated using the latitude and longitude coordinates of the crime incidents.
 
 [![Crime Heatmap of Los Angeles (2020-2023)](LA_Crime_Heatmap.png)
+
 *(Click to enlarge)*
 
 The heatmap clearly illustrates areas with a higher density of crime incidents through warmer color intensities. Consistent with the area-based analysis, the heatmap visibly highlights Downtown Los Angeles and portions of South Los Angeles, Hollywood, and other commercially dense areas as high-incidence zones. This visualization provides a compelling spatial understanding of crime patterns across the city.
