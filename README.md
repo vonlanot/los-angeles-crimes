@@ -87,8 +87,6 @@ To visually complement this analysis, a geographical heatmap was generated using
 
 ![Crime Heatmap of Los Angeles (2020-2023)](LA_Crime_Heatmap.png)
 
-*(Click to enlarge)*
-
 The heatmap clearly illustrates areas with a higher density of crime incidents through warmer color intensities. Consistent with the area-based analysis, the heatmap visibly highlights Downtown Los Angeles and portions of South Los Angeles, Hollywood, and other commercially dense areas as high-incidence zones. This visualization provides a compelling spatial understanding of crime patterns across the city.
 
 These findings underscore the uneven distribution of crime within Los Angeles, emphasizing the need for targeted strategies and resource allocation in these high-incidence areas.
