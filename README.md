@@ -55,6 +55,43 @@ Analyzing monthly crime trends for each year provides a visual understanding of 
     * **2022 (Green Line):** Stands out as the year with the highest overall monthly crime counts, indicating a peak in reported incidents during this period.
     * **2023 (Yellow Line):** While still high, this line generally runs slightly below the 2022 peak, suggesting a modest decrease or leveling off in crime reporting.
 
+### Geographical Distribution of Crimes
+
+To understand where crime incidents are most concentrated in Los Angeles, we analyzed the geographical distribution of reported crimes based on LAPD's reporting areas and visualized this data using a heatmap.
+
+**Analysis by Reporting Area (AREA NAME):**
+The top 15 areas with the highest number of reported crimes between 2020 and December 31, 2023, are:
+
+| AREA NAME      | Crime Count | Percentage of Total (%) |
+|----------------|-------------|-------------------------|
+| Central        | 59456       | 6.78                    |
+| 77th Street    | 54981       | 6.27                    |
+| Pacific        | 51351       | 5.85                    |
+| Southwest      | 49127       | 5.60                    |
+| Hollywood      | 46277       | 5.27                    |
+| Southeast      | 44325       | 5.05                    |
+| Olympic        | 44300       | 5.05                    |
+| N Hollywood    | 43857       | 5.00                    |
+| Newton         | 43787       | 4.99                    |
+| Wilshire       | 41933       | 4.78                    |
+| Rampart        | 41223       | 4.70                    |
+| West LA        | 40313       | 4.59                    |
+| Northeast      | 37703       | 4.30                    |
+| Van Nuys       | 37122       | 4.23                    |
+| West Valley    | 36863       | 4.20                    |
+
+The "Central" area, encompassing Downtown Los Angeles, exhibits the highest crime volume, accounting for nearly 7% of all reported incidents. Several other divisions, particularly in South Los Angeles, Hollywood, and the Wilshire area, also show significant concentrations of crime.
+
+**Heatmap Visualization:**
+To visually complement this analysis, a geographical heatmap was generated using the latitude and longitude coordinates of the crime incidents.
+
+[![Crime Heatmap of Los Angeles (2020-2023)](LA_Crime_Heatmap.png)
+*(Click to enlarge)*
+
+The heatmap clearly illustrates areas with a higher density of crime incidents through warmer color intensities. Consistent with the area-based analysis, the heatmap visibly highlights Downtown Los Angeles and portions of South Los Angeles, Hollywood, and other commercially dense areas as high-incidence zones. This visualization provides a compelling spatial understanding of crime patterns across the city.
+
+These findings underscore the uneven distribution of crime within Los Angeles, emphasizing the need for targeted strategies and resource allocation in these high-incidence areas.
+
 ## Google Colab Notebook
 [Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)
 
