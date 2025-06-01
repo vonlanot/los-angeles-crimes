@@ -199,7 +199,7 @@ This analysis provides a clear overview of the primary environments where crimes
 ```markdown
 ## Google Colab Notebook
 The complete data cleaning, analysis, and visualization code for this project is available in the following Google Colab notebook:
-[[Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)
+[Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)
 
 ## How to Explore the Notebook
 1.  Click on the "Link to Live Colab Notebook" above.
