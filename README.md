@@ -20,6 +20,7 @@ The dataset used in this project is the "Los Angeles Crime Data from 2020" provi
 **Important Data Notes:**
 * It's important to note that the crime data for 2024 and 2025 within the dataset is incomplete due to the adoption of a new Records Management System for reporting crimes and arrests by the Los Angeles Police Department in 2024. As observed in an initial time trend analysis, records for 2024 show a significant drop-off towards the latter half of the year, and 2025 only contains minimal entries. To ensure accuracy and avoid misinterpreting trends based on partial data, this project will filter the dataset to include crime incidents up to and including December 31, 2023. All analyses and findings presented are therefore based on the complete data up to the end of 2023.
 * A significant proportion of crime incidents (approximately 24.91%) have victim age recorded as 'Unknown/Not Recorded' (or 0/negative in the raw data). This substantial data gap means that while our analysis provides valuable insights into the age demographics of *known* victims, these findings may not fully represent the age distribution across *all* crime incidents. The presence of such a large "unknown" category limits the comprehensiveness of victim age-based conclusions and highlights a potential area for improved data collection.
+* Similar to victim age, a notable portion of the data, approximately **22.14%**, falls under the 'Unknown/Other' category for victim sex. This combines instances where the sex was not specified, was recorded as 'X', or contained clear data entry errors ('H', '-'). This significant data gap indicates a limitation in fully understanding the sex demographics for all crime incidents and should be kept in mind when interpreting the presented proportions.
 * The data is transcribed from original paper crime reports and may contain some inaccuracies.
 * Some location fields with missing data are noted as `(0°, 0°)`. These will require careful handling during analysis.
 * Address fields are provided only to the nearest hundred block to maintain privacy.
@@ -108,6 +109,24 @@ The bar chart below visually represents the percentage distribution of crime inc
 [![Percentage of Crime Incidents by Victim Age Group (2020-2023)](LA_Crime_Incidents_Victim_Age.png)](LA_Crime_Incidents_Victim_Age.png)
 
 This visualization clearly highlights the age groups most impacted by crime and underscores the significant portion of incidents where victim age remains unrecorded, guiding future data collection improvements and targeted intervention strategies.
+
+### Victim Sex Distribution Analysis
+
+Understanding the sex distribution among crime victims provides another layer of insight into crime patterns and potential vulnerabilities. This section analyzes the reported sex of victims for crime incidents in Los Angeles.
+
+**Key Findings from Sex Distribution:**
+Among the incidents where victim sex was identified:
+* **Male victims** account for the largest proportion, at **41.11%** of all crime incidents.
+* **Female victims** follow closely, representing **36.75%** of all incidents.
+
+While males are slightly more often reported as victims, the proportions between male and female victims are relatively close, suggesting that both sexes experience significant levels of victimization across reported crimes in Los Angeles. The 'Unknown/Other' category's size, however, means a portion of the distribution remains unclassified.
+
+**Visualization: Percentage of Crime Incidents by Victim Sex**
+The bar chart below illustrates the percentage distribution of crime incidents based on the sex of the victim.
+
+[![Percentage of Crime Incidents by Victim Sex (2020-2023)](LA_Crime_Sex_Distribution.png)](LA_Crime_Sex_Distribution.png)
+
+This visualization clearly shows the proportions of male, female, and unknown/other victims, providing a concise overview of victim sex demographics in the dataset.
 
 ## Google Colab Notebook
 [Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)
