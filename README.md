@@ -166,7 +166,7 @@ A key insight is the considerable size of the consolidated **"Other Premises" gr
 **Visualization: Percentage of Crime Incidents by Premise Type**
 The bar chart below illustrates the percentage distribution of crime incidents across the consolidated premise types. The specific premise types are ordered by their frequency, with the "Other Premises" category intentionally placed at the end to provide a clear summary of all less common locations, allowing for better focus on the most prevalent crime environments.
 
-[![Percentage of Crime Incidents by Premise Type (2020-2023)](LA_Crime_Premise_Distribution.png)](LA_Crime_Premise_Distribution.png)
+[![Percentage of Crime Incidents by Premise Type (2020-2023)](LA_Crime_Premises.png)](LA_Crime_Premises.png)
 
 This analysis provides a clear overview of the primary environments where crimes occur in Los Angeles, emphasizing both dominant locations and the collective significance of a wide array of other settings.
 
