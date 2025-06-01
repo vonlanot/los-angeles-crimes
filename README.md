@@ -79,7 +79,7 @@ While not a sharp increase, there's a **subtle uptick in crime towards the end o
 **Visualization: Percentage of Crime Incidents by Day of Week**
 The bar chart below visually represents the percentage of crime incidents occurring on each day of the week. The days are ordered chronologically from Monday to Sunday, clearly illustrating the consistent nature of crime across the week.
 
-[![Percentage of Crime Incidents by Day of Week (2020-2023)](LA_Crime_Day_of_Week_Distribution.png)](LA_Crime_Day_of_Week_Distribution.png)
+[![Percentage of Crime Incidents by Day of Week (2020-2023)](LA_Crime_Days.png)](LA_Crime_Days.png)
 
 This analysis provides a clear perspective on the daily rhythm of crime in Los Angeles, indicating a pervasive and relatively uniform occurrence throughout the week.
 
