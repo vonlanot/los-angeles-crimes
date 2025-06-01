@@ -70,6 +70,21 @@ Analyzing monthly crime trends for each year provides a visual understanding of 
     * **2022 (Green Line):** Stands out as the year with the highest overall monthly crime counts, indicating a peak in reported incidents during this period.
     * **2023 (Yellow Line):** While still high, this line generally runs slightly below the 2022 peak, suggesting a modest decrease or leveling off in crime reporting.
 
+### Crime Distribution by Day of Week
+
+Understanding how crime is distributed across the days of the week can offer insights into patterns related to daily routines, work schedules, or social activities. This analysis examines the frequency of crime incidents for each day.
+
+A key finding from this analysis is the **remarkably even distribution of crime incidents throughout the week**. Unlike some crime patterns that show dramatic spikes on specific days, the data for Los Angeles indicates a fairly consistent level of criminal activity each day. Percentages range narrowly, from a low of **13.73% on Tuesdays** to a slight peak of **15.28% on Fridays**.
+
+While not a sharp increase, there's a **subtle uptick in crime towards the end of the traditional workweek and into the weekend**, with Friday and Saturday showing marginally higher proportions. Conversely, Tuesdays and Sundays record slightly lower percentages. This even distribution suggests that crime prevention efforts and resource allocation may need to remain consistent across all days of the week, rather than being heavily concentrated on particular "high-risk" days.
+
+**Visualization: Percentage of Crime Incidents by Day of Week**
+The bar chart below visually represents the percentage of crime incidents occurring on each day of the week. The days are ordered chronologically from Monday to Sunday, clearly illustrating the consistent nature of crime across the week.
+
+[![Percentage of Crime Incidents by Day of Week (2020-2023)](LA_Crime_Days.png)](LA_Crime_Days.png)
+
+This analysis provides a clear perspective on the daily rhythm of crime in Los Angeles, indicating a pervasive and relatively uniform occurrence throughout the week.
+
 ### Geographical Distribution of Crimes
 
 To understand where crime incidents are most concentrated in Los Angeles, we analyzed the geographical distribution of reported crimes based on LAPD's reporting areas and visualized this data using a heatmap.
