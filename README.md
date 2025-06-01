@@ -1,92 +1,89 @@
 # los-angeles-crimes
 An in-depth analysis of Los Angeles crime data from 2020 onwards, focusing on trends, patterns, and geographical distributions using Python for data cleaning, EDA, and visualization.
 
-# Los Angeles Crime Data Analysis (2020-Present)
+# Los Angeles Crime Data Analysis (2020-2023)
 
 ## Project Description
-This project focuses on exploring and analyzing incident-level crime data from the City of Los Angeles, covering incidents from 2020 to the present. The aim is to uncover patterns, trends, and insights into crime occurrences across different dimensions such as time, location, and crime type. This analysis demonstrates skills in data cleaning, exploratory data analysis (EDA), and data visualization using Python.
+This project conducts an in-depth exploratory data analysis (EDA) of incident-level crime data from the City of Los Angeles, specifically covering incidents from **2020 to 2023**. Utilizing Python, Pandas, and visualization libraries, the analysis aims to uncover significant patterns, trends, and key insights into crime occurrences across various dimensions, including temporal factors, geographical distribution, victim demographics, and premise types. This work showcases practical skills in data cleaning, transformation, statistical analysis, and compelling data visualization.
 
 ## Problem Statement & Goals
-The primary goals of this analysis are to:
-* Identify the most common types of crimes reported in Los Angeles.
-* Analyze crime trends over time (e.g., monthly, quarterly, yearly patterns).
-* Investigate the geographical distribution of crimes to identify high-incidence areas.
-* Explore relationships between crime incidents and other available attributes (e.g., victim age, sex, descent, premise description).
-* Provide data-driven insights that could potentially inform community safety initiatives or resource allocation.
+The primary objective of this analysis is to leverage Los Angeles crime data to extract actionable insights that can inform public safety strategies and resource allocation. Key analytical goals include:
+
+* Identifying the most common types of crimes reported in Los Angeles.
+* Analyzing crime trends over specific timeframes (e.g., monthly, yearly patterns) to understand temporal dynamics.
+* Investigating the geographical distribution of crimes to pinpoint high-incidence areas and visualize crime hotspots.
+* Exploring relationships between crime incidents and victim demographics (age, sex, descent) to understand victim profiles.
+* Analyzing crime occurrences by premise type to identify vulnerable locations.
+* Providing data-driven insights that could potentially inform community safety initiatives, resource allocation, and targeted interventions.
 
 ## Data Source
-The dataset used in this project is the "Los Angeles Crime Data from 2020" provided by the Los Angeles Police Department (LAPD) via [data.gov](https://catalog.data.gov/dataset/crime-data-from-2020-to-present).
+The dataset utilized in this project is the "Los Angeles Crime Data from 2020 to Present," officially provided by the Los Angeles Police Department (LAPD) and publicly available via [data.gov](https://catalog.data.gov/dataset/crime-data-from-2020-to-present).
 
 ## Data Quality and Limitations
 
-Understanding the nuances of the data is crucial for accurate analysis. This project addresses several key data quality issues and limitations within the Los Angeles crime dataset:
+Understanding the nuances and limitations of any dataset is crucial for accurate analysis and drawing reliable conclusions. This project rigorously addresses several key data quality issues and inherent limitations within the Los Angeles crime dataset to ensure the integrity of our findings.
 
 ### Incomplete Recent Data (2024-2025)
-The dataset includes crime data for 2024 and 2025, but these years are **incomplete**. This is primarily due to the Los Angeles Police Department's adoption of a new Records Management System in 2024, which affected data reporting. An initial time trend analysis revealed a significant drop-off in records during the latter half of 2024, with 2025 containing only minimal entries. To ensure the reliability of our analysis and avoid misinterpreting trends based on partial data, **all analyses and findings presented in this project are based solely on crime incidents up to and including December 31, 2023.**
+The dataset includes partial crime data for 2024 and 2025. This incompleteness is primarily attributed to the Los Angeles Police Department's adoption of a new Records Management System in 2024, which significantly affected data reporting during that period. An initial time trend analysis revealed a sharp drop-off in records during the latter half of 2024, with 2025 containing only minimal entries. To ensure the reliability and validity of our analysis, **all findings presented in this project are derived solely from crime incidents recorded up to and including December 31, 2023.** This measure prevents misinterpretation of trends based on incomplete or anomalous data.
 
 ### Significant Missing Victim Demographics
-A substantial portion of demographic information for victims is **missing or unspecified**, which impacts the comprehensiveness of insights into victim profiles:
+A substantial portion of demographic information for victims is either **missing or unspecified**, which directly impacts the comprehensiveness of insights into victim profiles. This data gap is a crucial limitation to consider when interpreting victim-focused findings and highlights potential areas for improved data collection by the reporting agency.
 
-* **Victim Age:** Approximately **24.91%** of crime incidents have victim age recorded as 'Unknown/Not Recorded' (or 0/negative in the raw data). While our analysis provides valuable insights into the age demographics of *known* victims, this significant gap means these findings may not fully represent the age distribution across *all* crime incidents.
-* **Victim Sex:** Similarly, about **22.14%** of victim sex data falls under the 'Unknown/Other' category, which includes unspecified sex, 'X', or clear data entry errors ('H', '-'). This limits a complete understanding of sex demographics for all incidents.
-* **Victim Descent:** The largest single category for victim descent is **'Unknown/Unspecified' at 30.95%**. This considerable data gap means nearly a third of all crime incidents lack recorded victim descent information, obscuring the full picture of victim demographics among identified groups.
-
-These missing demographic data points are crucial limitations to consider when interpreting victim-focused findings and highlight potential areas for improved data collection by the reporting agency.
+* **Victim Age:** Approximately **24.91%** of crime incidents lack recorded victim age (represented as 0 or negative values in the raw data). While the analysis provides valuable insights into the age demographics of *known* victims, this significant gap means these findings may not fully represent the age distribution across *all* crime incidents.
+* **Victim Sex:** Similarly, about **22.14%** of victim sex data falls under the **'Unknown/Other'** category, encompassing unspecified sex, 'X', or clear data entry errors ('H', '-'). This limitation prevents a complete understanding of sex demographics for all incidents.
+* **Victim Descent:** The largest single category for victim descent is **'Unknown/Unspecified' at 30.95%**. This considerable data gap signifies that nearly a third of all crime incidents lack recorded victim descent information, thereby obscuring a full picture of victim demographics among identified groups.
 
 ### Other Data Considerations
-* **Transcription Inaccuracies:** The raw data was transcribed from original paper crime reports, which may introduce some **inaccuracies**.
-* **Missing Location Data:** Some location fields with missing data are noted as **(0°, 0°)**. These require careful handling during spatial analysis.
-* **Privacy Protection:** Address fields are provided only to the **nearest hundred block** to maintain privacy, limiting granular location analysis.
+* **Transcription Inaccuracies:** The raw data was transcribed from original paper crime reports, which may inherently introduce some **transcription inaccuracies**.
+* **Missing Location Data:** Certain location fields, particularly latitude and longitude, contain missing data denoted as **(0°, 0°)**. These require careful handling during spatial analysis to avoid skewing geographical patterns.
+* **Privacy Protection:** To maintain individual privacy, address fields are provided only to the **nearest hundred block**. This limits the granularity of micro-level location analysis.
 
 ## Technologies Used
-* **Python**
-* **Pandas:** For data manipulation and analysis.
-* **NumPy:** For numerical operations.
-* **Matplotlib:** For basic plotting and visualization.
-* **Seaborn:** For enhanced statistical data visualization.
-* **(Potentially others as needed):** e.g., Plotly for interactive visualizations, SciPy for statistical tests.
+* **Python:** The core programming language for the entire analysis.
+* **Pandas:** Utilized extensively for efficient data loading, cleaning, manipulation, and statistical aggregation.
+* **NumPy:** Used for foundational numerical operations and array manipulation.
+* **Matplotlib:** Employed for creating static plots and customizing visualizations.
+* **Seaborn:** Used to generate aesthetically pleasing and informative statistical graphics.
+* **Folium:** Used for creating interactive geographical maps and visualizing crime hotspots.
 
 ### Key Findings and Insights
 
-This data analysis project investigates Los Angeles crime data from 2020 to December 31, 2023, employing statistical methods to identify and analyze prevalent crime types and their trends over time.
+This data analysis project investigates Los Angeles crime data from 2020 to December 31, 2023, employing statistical methods and visualizations to identify and analyze prevalent crime types, their temporal trends, geographical distribution, and victim demographics.
 
-**Most Prevalent Crime Types:**
-An examination of crime descriptions revealed the most common offenses reported in Los Angeles during the period of analysis:
-* The data indicates a strong prevalence of **property-related crimes**. **"VEHICLE - STOLEN"** remains the most frequent, accounting for $\approx 10.68\%$ of all reported crimes. This is followed by **"BATTERY - SIMPLE ASSAULT,"** **"THEFT OF IDENTITY,"** and **"BURGLARY FROM VEHICLE."**
-* While property crimes dominate the top ranks, the significant presence of various **assault types** highlights areas of concern beyond just property loss. These include **"BATTERY - SIMPLE ASSAULT,"** **"ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT,"** and **"INTIMATE PARTNER - SIMPLE ASSAULT."**
+#### Most Prevalent Crime Types
+An examination of crime descriptions revealed the most common offenses reported in Los Angeles during the period of analysis. The distribution highlights specific categories of crime that are most prevalent:
 
-### Crime Trends Over Time
+* The data indicates a strong prevalence of **property-related crimes**. **"VEHICLE - STOLEN"** remains the most frequent offense, accounting for approximately **10.68%** of all reported crimes. This is notably followed by other property-related crimes such as **"THEFT OF IDENTITY"** and **"BURGLARY FROM VEHICLE,"** emphasizing property loss as a significant concern.
+* Beyond property offenses, the analysis also identified a significant presence of various **assault types**, underscoring concerns about personal safety. Prominent examples include **"BATTERY - SIMPLE ASSAULT,"** **"ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT,"** and **"INTIMATE PARTNER - SIMPLE ASSAULT."**
 
-**Crime Trends Over Time (2020-2023):**
-Analyzing monthly crime trends for each year provides a visual understanding of shifts in reported incidents:
+#### Crime Trends Over Time
+Analyzing monthly crime trends for each year (2020-2023) provides a visual understanding of shifts in reported incidents and broader temporal dynamics.
 
 ![Monthly Crime Trends in Los Angeles (2020-2023)](Monthly_Crime_Trends_LA.png)
 
-* **Overall Increase followed by a Slight Decline:** The graph clearly illustrates that crime counts in **2022 (green line)** and **2023 (yellow line)** are consistently higher across most months compared to **2020 (black line)** and **2021 (blue line)**. This indicates a general upward trend in reported crimes from the earlier years, peaking in 2022, followed by a slight moderation in 2023.
-* **Limited Consistent Monthly Seasonality:** While minor fluctuations are visible, the plot does not reveal a strong, repeatable seasonal pattern across all years (e.g., a distinct, consistent peak or trough month). This suggests that while subtle influences might be present, they aren't the primary drivers of overall crime volume in Los Angeles during this period.
+* **Overall Increase followed by a Slight Moderation:** The visualization clearly illustrates that crime counts in **2022 (green line)** and **2023 (yellow line)** are consistently higher across most months compared to **2020 (black line)** and **2021 (blue line)**. This indicates a general upward trend in reported crimes from the earlier years, peaking in 2022, followed by a slight moderation in 2023.
+* **Limited Consistent Monthly Seasonality:** An important insight is the **absence of a strong, repeatable monthly seasonal pattern** across all years. While minor fluctuations are visible, the plot does not reveal distinct, consistent peaks or troughs that recur predictably each year. This suggests that while subtle influences might be present, broad seasonal changes are not the primary drivers of overall crime volume in Los Angeles during this period.
 * **Year-Specific Observations:**
-    * **2020 (Black Line):** Represents the lowest crime reporting year in the dataset, providing a baseline.
-    * **2021 (Blue Line):** Shows an increase from 2020, but generally stays below the levels of the subsequent two years.
-    * **2022 (Green Line):** Stands out as the year with the highest overall monthly crime counts, indicating a peak in reported incidents during this period.
-    * **2023 (Yellow Line):** While still high, this line generally runs slightly below the 2022 peak, suggesting a modest decrease or leveling off in crime reporting.
+    * **2020 (Black Line):** Represents the lowest crime reporting year in the dataset, likely influenced by early pandemic effects, providing a baseline.
+    * **2021 (Blue Line):** Shows a noticeable increase from 2020, but generally stays below the levels of the subsequent two years.
+    * **2022 (Green Line):** Stands out as the year with the highest overall monthly crime counts, indicating a significant peak in reported incidents during this period.
+    * **2023 (Yellow Line):** While still maintaining high levels, this line generally runs slightly below the 2022 peak, suggesting a modest decrease or leveling off in crime reporting.
 
-### Crime Distribution by Day of Week
-
-Understanding how crime is distributed across the days of the week can offer insights into patterns related to daily routines, work schedules, or social activities. This analysis examines the frequency of crime incidents for each day.
+#### Crime Distribution by Day of Week
+Understanding how crime is distributed across the days of the week offers insights into patterns related to daily routines, work schedules, or social activities. This analysis examines the frequency of crime incidents for each day.
 
 A key finding from this analysis is the **remarkably even distribution of crime incidents throughout the week**. Unlike some crime patterns that show dramatic spikes on specific days, the data for Los Angeles indicates a fairly consistent level of criminal activity each day. Percentages range narrowly, from a low of **13.73% on Tuesdays** to a slight peak of **15.28% on Fridays**.
 
-While not a sharp increase, there's a **subtle uptick in crime towards the end of the traditional workweek and into the weekend**, with Friday and Saturday showing marginally higher proportions. Conversely, Tuesdays and Sundays record slightly lower percentages. This even distribution suggests that crime prevention efforts and resource allocation may need to remain consistent across all days of the week, rather than being heavily concentrated on particular "high-risk" days.
+While not a sharp increase, there's a **subtle uptick in crime towards the end of the traditional workweek and into the weekend**, with Friday and Saturday showing marginally higher proportions. Conversely, Tuesdays and Sundays record slightly lower percentages. This consistent distribution suggests that crime prevention efforts and resource allocation may need to remain uniform across all days of the week, rather than being heavily concentrated on particular "high-risk" days.
 
 **Visualization: Percentage of Crime Incidents by Day of Week**
 The bar chart below visually represents the percentage of crime incidents occurring on each day of the week. The days are ordered chronologically from Monday to Sunday, clearly illustrating the consistent nature of crime across the week.
 
-[![Percentage of Crime Incidents by Day of Week (2020-2023)](LA_Crime_Days.png)](LA_Crime_Days.png)
+[![Percentage of Crime Incidents by Day of Week (2020-2023)](LA_Crime_Day_of_Week_Distribution.png)](LA_Crime_Day_of_Week_Distribution.png)
 
 This analysis provides a clear perspective on the daily rhythm of crime in Los Angeles, indicating a pervasive and relatively uniform occurrence throughout the week.
 
-### Geographical Distribution of Crimes
-
+#### Geographical Distribution of Crimes
 To understand where crime incidents are most concentrated in Los Angeles, we analyzed the geographical distribution of reported crimes based on LAPD's reporting areas and visualized this data using a heatmap.
 
 **Analysis by Reporting Area (AREA NAME):**
@@ -121,12 +118,12 @@ The heatmap clearly illustrates areas with a higher density of crime incidents t
 
 These findings underscore the uneven distribution of crime within Los Angeles, emphasizing the need for targeted strategies and resource allocation in these high-incidence areas.
 
-### Victim Age Group Analysis
-
+#### Victim Age Group Analysis
 Understanding the demographics of crime victims can reveal important patterns and inform targeted prevention efforts. This section analyzes the distribution of crime incidents across different victim age groups.
 
 **Key Findings from Age Group Distribution:**
 Among the incidents where victim age was recorded, distinct patterns emerged:
+
 * **Peak Victimization in Mid-Adult Ages:** The highest percentages of crime victims fall within the **25-34 (Adult)** age group (20.73% of total crimes), followed closely by the **35-44 (Adult)** age group (17.18%). These two groups combined account for over 37% of all recorded victims. This suggests that adults in their mid-twenties to mid-forties are disproportionately affected by crime, likely due to their higher levels of social and economic activity.
 * **Young Adult Vulnerability:** The **18-24 (Young Adult)** group also shows a significant proportion of victims at 8.15%, indicating a continued high level of risk in early adulthood.
 * **Lower Incidence at Age Extremes:** Crime victimization rates are considerably lower for the youngest age groups (`1-11 (Child)` at 0.69% and `12-17 (Teen)` at 1.54%) and the oldest age groups (`65-74 (Senior)` at 4.38%, `75-84 (Elderly)` at 1.50%, and `85+ (Elderly)` at 0.45%). While serious, this proportional reduction might be influenced by factors such as reduced exposure to high-risk environments or different reporting patterns.
@@ -138,12 +135,12 @@ The bar chart below visually represents the percentage distribution of crime inc
 
 This visualization clearly highlights the age groups most impacted by crime and underscores the significant portion of incidents where victim age remains unrecorded, guiding future data collection improvements and targeted intervention strategies.
 
-### Victim Sex Distribution Analysis
-
+#### Victim Sex Distribution Analysis
 Understanding the sex distribution among crime victims provides another layer of insight into crime patterns and potential vulnerabilities. This section analyzes the reported sex of victims for crime incidents in Los Angeles.
 
 **Key Findings from Sex Distribution:**
 Among the incidents where victim sex was identified:
+
 * **Male victims** account for the largest proportion, at **41.11%** of all crime incidents.
 * **Female victims** follow closely, representing **36.75%** of all incidents.
 
@@ -156,15 +153,14 @@ The bar chart below illustrates the percentage distribution of crime incidents b
 
 This visualization clearly shows the proportions of male, female, and unknown/other victims, providing a concise overview of victim sex demographics in the dataset.
 
-### Victim Descent Distribution Analysis
-
+#### Victim Descent Distribution Analysis
 Analyzing the descent of crime victims can reveal important patterns and potential disparities in victimization across different communities. This section examines the distribution of crime incidents based on the victim's reported descent.
 
 **Key Findings from Descent Distribution:**
 Among the incidents where victim descent was recorded, distinct patterns emerged:
 
 * **Dominance of Hispanic/Latin Victims:** **Hispanic/Latin individuals represent the largest known group of victims, accounting for 30.52%** of all crime incidents.
-* **Significant Proportions for White and Black Victims:** **White victims** constitute the second-largest group at **20.34%**, followed by **Black victims** at **14.14%**. These three groups combined (`Hispanic/Latin`, `White`, and `Black`) make up the vast majority of identified crime victims in the dataset.
+* **Significant Proportions for White and Black Victims:** **White victims** constitute the second-largest group at **20.34%**, followed by **Black victims** at **14.14%**. These three groups combined (`Hispanic/Latin`, `White`, and `Black`) make the vast majority of identified crime victims in the dataset.
 * **Other Identified Descent Groups:**
     * **Asian victims** account for **3.88%** of incidents.
     * **American Indian/Alaska Native victims** represent **0.1%**.
@@ -178,8 +174,7 @@ The bar chart below visually represents the percentage distribution of crime inc
 
 This analysis underscores the importance of victim descent data for understanding community impact, while also highlighting the need for improved data collection regarding victim demographics.
 
-### Premise Type Distribution Analysis
-
+#### Premise Type Distribution Analysis
 Analyzing the types of premises where crimes most frequently occur provides crucial insights into crime hotspots and potential vulnerabilities in different environments. This analysis categorizes crime incidents based on their reported premise description, consolidating a wide range of specific locations into more manageable groups.
 
 A primary finding from this analysis is that the **STREET is the single most common location for crime incidents, accounting for 25.23%** of all reported crimes. This underscores the prevalence of criminal activity in public thoroughfares and open outdoor spaces.
@@ -193,14 +188,21 @@ A key insight is the considerable size of the consolidated **"Other Premises" gr
 **Visualization: Percentage of Crime Incidents by Premise Type**
 The bar chart below illustrates the percentage distribution of crime incidents across the consolidated premise types. The specific premise types are ordered by their frequency, with the "Other Premises" category intentionally placed at the end to provide a clear summary of all less common locations, allowing for better focus on the most prevalent crime environments.
 
-[![Percentage of Crime Incidents by Premise Type (2020-2023)](LA_Crime_Premises.png)](LA_Crime_Premises.png)
+[![Percentage of Crime Incidents by Premise Type (2020-2023)](LA_Crime_Premise_Distribution.png)](LA_Crime_Premise_Distribution.png)
+*(Click to enlarge)*
 
 This analysis provides a clear overview of the primary environments where crimes occur in Los Angeles, emphasizing both dominant locations and the collective significance of a wide array of other settings.
 
+---
+
+### **8. Google Colab Notebook & How to Explore**
+
+```markdown
 ## Google Colab Notebook
+The complete data cleaning, analysis, and visualization code for this project is available in the following Google Colab notebook:
 [Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)
 
-## How to Explore
+## How to Explore the Notebook
 1.  Click on the "Link to Live Colab Notebook" above.
-2.  The notebook will open directly in Google Colab.
-3.  You can view the code, outputs, and explanations. To run the code yourself, you can select "File" > "Save a copy in Drive" or "Save a copy in GitHub" to create your own editable version.
+2.  The notebook will open directly in Google Colab, allowing you to view all code, outputs, and explanations within your browser.
+3.  To interact with the code, run cells, or save your own editable version, you can select "File" > "Save a copy in Drive" or "Save a copy in GitHub."
