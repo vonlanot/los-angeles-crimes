@@ -148,7 +148,6 @@ Among the incidents where victim descent was recorded, distinct patterns emerged
 The bar chart below visually represents the percentage distribution of crime incidents across the victim descent categories. For clarity, the 'Unknown/Unspecified' category has been placed at the end of the chart to allow for easier comparison among the identified descent groups, while still clearly showing the proportion of unclassified data.
 
 [![Percentage of Crime Incidents by Victim Descent (2020-2023)](LA_Crime_Victim_Descent.png)](LA_Crime_Victim_Descent.png)
-*(Click to enlarge)*
 
 This analysis underscores the importance of victim descent data for understanding community impact, while also highlighting the need for improved data collection regarding victim demographics.
 
