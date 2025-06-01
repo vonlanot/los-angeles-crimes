@@ -21,6 +21,7 @@ The dataset used in this project is the "Los Angeles Crime Data from 2020" provi
 * It's important to note that the crime data for 2024 and 2025 within the dataset is incomplete due to the adoption of a new Records Management System for reporting crimes and arrests by the Los Angeles Police Department in 2024. As observed in an initial time trend analysis, records for 2024 show a significant drop-off towards the latter half of the year, and 2025 only contains minimal entries. To ensure accuracy and avoid misinterpreting trends based on partial data, this project will filter the dataset to include crime incidents up to and including December 31, 2023. All analyses and findings presented are therefore based on the complete data up to the end of 2023.
 * A significant proportion of crime incidents (approximately 24.91%) have victim age recorded as 'Unknown/Not Recorded' (or 0/negative in the raw data). This substantial data gap means that while our analysis provides valuable insights into the age demographics of *known* victims, these findings may not fully represent the age distribution across *all* crime incidents. The presence of such a large "unknown" category limits the comprehensiveness of victim age-based conclusions and highlights a potential area for improved data collection.
 * Similar to victim age, a notable portion of the data, approximately **22.14%**, falls under the 'Unknown/Other' category for victim sex. This combines instances where the sex was not specified, was recorded as 'X', or contained clear data entry errors ('H', '-'). This significant data gap indicates a limitation in fully understanding the sex demographics for all crime incidents and should be kept in mind when interpreting the presented proportions.
+* A significant finding from the dataset is that the largest single category for victim descent is **'Unknown/Unspecified' at 30.95%**. This substantial proportion indicates a considerable data gap, meaning that nearly a third of all crime incidents lack recorded victim descent information. This limitation is crucial to consider when interpreting the distribution among the identified descent groups, as the full picture of victim demographics remains partially obscured.
 * The data is transcribed from original paper crime reports and may contain some inaccuracies.
 * Some location fields with missing data are noted as `(0°, 0°)`. These will require careful handling during analysis.
 * Address fields are provided only to the nearest hundred block to maintain privacy.
@@ -127,6 +128,29 @@ The bar chart below illustrates the percentage distribution of crime incidents b
 [![Percentage of Crime Incidents by Victim Sex (2020-2023)](LA_Crime_Sex_Distribution.png)](LA_Crime_Sex_Distribution.png)
 
 This visualization clearly shows the proportions of male, female, and unknown/other victims, providing a concise overview of victim sex demographics in the dataset.
+
+### Victim Descent Distribution Analysis
+
+Analyzing the descent of crime victims can reveal important patterns and potential disparities in victimization across different communities. This section examines the distribution of crime incidents based on the victim's reported descent.
+
+**Key Findings from Descent Distribution:**
+Among the incidents where victim descent was recorded, distinct patterns emerged:
+
+* **Dominance of Hispanic/Latin Victims:** **Hispanic/Latin individuals represent the largest known group of victims, accounting for 30.52%** of all crime incidents.
+* **Significant Proportions for White and Black Victims:** **White victims** constitute the second-largest group at **20.34%**, followed by **Black victims** at **14.14%**. These three groups combined (`Hispanic/Latin`, `White`, and `Black`) make up the vast majority of identified crime victims in the dataset.
+* **Other Identified Descent Groups:**
+    * **Asian victims** account for **3.88%** of incidents.
+    * **American Indian/Alaska Native victims** represent **0.1%**.
+    * **Pacific Islander victims** are at **0.06%**.
+    While these groups have smaller proportional representations, their explicit categorization allows for a more detailed and accurate understanding of victimization patterns within these specific communities.
+
+**Visualization: Percentage of Crime Incidents by Victim Descent**
+The bar chart below visually represents the percentage distribution of crime incidents across the victim descent categories. For clarity, the 'Unknown/Unspecified' category has been placed at the end of the chart to allow for easier comparison among the identified descent groups, while still clearly showing the proportion of unclassified data.
+
+[![Percentage of Crime Incidents by Victim Descent (2020-2023)](LA_Crime_Victim_Descent.png)](LA_Crime_Victim_Descent.png)
+*(Click to enlarge)*
+
+This analysis underscores the importance of victim descent data for understanding community impact, while also highlighting the need for improved data collection regarding victim demographics.
 
 ## Google Colab Notebook
 [Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)
