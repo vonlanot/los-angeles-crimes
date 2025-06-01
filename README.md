@@ -17,14 +17,26 @@ The primary goals of this analysis are to:
 ## Data Source
 The dataset used in this project is the "Los Angeles Crime Data from 2020" provided by the Los Angeles Police Department (LAPD) via [data.gov](https://catalog.data.gov/dataset/crime-data-from-2020-to-present).
 
-**Important Data Notes:**
-* It's important to note that the crime data for 2024 and 2025 within the dataset is incomplete due to the adoption of a new Records Management System for reporting crimes and arrests by the Los Angeles Police Department in 2024. As observed in an initial time trend analysis, records for 2024 show a significant drop-off towards the latter half of the year, and 2025 only contains minimal entries. To ensure accuracy and avoid misinterpreting trends based on partial data, this project will filter the dataset to include crime incidents up to and including December 31, 2023. All analyses and findings presented are therefore based on the complete data up to the end of 2023.
-* A significant proportion of crime incidents (approximately 24.91%) have victim age recorded as 'Unknown/Not Recorded' (or 0/negative in the raw data). This substantial data gap means that while our analysis provides valuable insights into the age demographics of *known* victims, these findings may not fully represent the age distribution across *all* crime incidents. The presence of such a large "unknown" category limits the comprehensiveness of victim age-based conclusions and highlights a potential area for improved data collection.
-* Similar to victim age, a notable portion of the data, approximately **22.14%**, falls under the 'Unknown/Other' category for victim sex. This combines instances where the sex was not specified, was recorded as 'X', or contained clear data entry errors ('H', '-'). This significant data gap indicates a limitation in fully understanding the sex demographics for all crime incidents and should be kept in mind when interpreting the presented proportions.
-* A significant finding from the dataset is that the largest single category for victim descent is **'Unknown/Unspecified' at 30.95%**. This substantial proportion indicates a considerable data gap, meaning that nearly a third of all crime incidents lack recorded victim descent information. This limitation is crucial to consider when interpreting the distribution among the identified descent groups, as the full picture of victim demographics remains partially obscured.
-* The data is transcribed from original paper crime reports and may contain some inaccuracies.
-* Some location fields with missing data are noted as `(0°, 0°)`. These will require careful handling during analysis.
-* Address fields are provided only to the nearest hundred block to maintain privacy.
+## Data Quality and Limitations
+
+Understanding the nuances of the data is crucial for accurate analysis. This project addresses several key data quality issues and limitations within the Los Angeles crime dataset:
+
+### Incomplete Recent Data (2024-2025)
+The dataset includes crime data for 2024 and 2025, but these years are **incomplete**. This is primarily due to the Los Angeles Police Department's adoption of a new Records Management System in 2024, which affected data reporting. An initial time trend analysis revealed a significant drop-off in records during the latter half of 2024, with 2025 containing only minimal entries. To ensure the reliability of our analysis and avoid misinterpreting trends based on partial data, **all analyses and findings presented in this project are based solely on crime incidents up to and including December 31, 2023.**
+
+### Significant Missing Victim Demographics
+A substantial portion of demographic information for victims is **missing or unspecified**, which impacts the comprehensiveness of insights into victim profiles:
+
+* **Victim Age:** Approximately **24.91%** of crime incidents have victim age recorded as 'Unknown/Not Recorded' (or 0/negative in the raw data). While our analysis provides valuable insights into the age demographics of *known* victims, this significant gap means these findings may not fully represent the age distribution across *all* crime incidents.
+* **Victim Sex:** Similarly, about **22.14%** of victim sex data falls under the 'Unknown/Other' category, which includes unspecified sex, 'X', or clear data entry errors ('H', '-'). This limits a complete understanding of sex demographics for all incidents.
+* **Victim Descent:** The largest single category for victim descent is **'Unknown/Unspecified' at 30.95%**. This considerable data gap means nearly a third of all crime incidents lack recorded victim descent information, obscuring the full picture of victim demographics among identified groups.
+
+These missing demographic data points are crucial limitations to consider when interpreting victim-focused findings and highlight potential areas for improved data collection by the reporting agency.
+
+### Other Data Considerations
+* **Transcription Inaccuracies:** The raw data was transcribed from original paper crime reports, which may introduce some **inaccuracies**.
+* **Missing Location Data:** Some location fields with missing data are noted as **(0°, 0°)**. These require careful handling during spatial analysis.
+* **Privacy Protection:** Address fields are provided only to the **nearest hundred block** to maintain privacy, limiting granular location analysis.
 
 ## Technologies Used
 * **Python**
