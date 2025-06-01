@@ -218,7 +218,6 @@ This project lays a strong foundation for understanding crime patterns in Los An
 
 ### **8. Google Colab Notebook & How to Explore**
 
-```markdown
 ## Google Colab Notebook
 The complete data cleaning, analysis, and visualization code for this project is available in the following Google Colab notebook:
 [Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)
