@@ -151,6 +151,25 @@ The bar chart below visually represents the percentage distribution of crime inc
 
 This analysis underscores the importance of victim descent data for understanding community impact, while also highlighting the need for improved data collection regarding victim demographics.
 
+### Premise Type Distribution Analysis
+
+Analyzing the types of premises where crimes most frequently occur provides crucial insights into crime hotspots and potential vulnerabilities in different environments. This analysis categorizes crime incidents based on their reported premise description, consolidating a wide range of specific locations into more manageable groups.
+
+A primary finding from this analysis is that the **STREET is the single most common location for crime incidents, accounting for 25.23%** of all reported crimes. This underscores the prevalence of criminal activity in public thoroughfares and open outdoor spaces.
+
+**Residential areas also account for a significant portion of crime venues**. **Single Family Dwellings (17.01%)** and **Multi-Unit Dwellings (Apartment, Duplex, etc.) (12.31%)** collectively represent over 29% of crime locations, highlighting that a substantial amount of criminal activity occurs within or immediately adjacent to people's homes.
+
+Other notable specific locations include **Parking Lots (6.93%)** and **Other Businesses (4.73%)**, indicating the prominence of commercial zones and vehicle-related environments for criminal activity. Further specific locations such as **Sidewalks (4.26%)**, **Vehicle, Passenger/Truck (2.94%)**, **Garage/Carport (1.94%)**, **Driveways (1.61%)**, and **Restaurant/Fast Food (1.27%)** also contribute to the overall picture, showcasing the diverse range of specific environments where crimes take place.
+
+A key insight is the considerable size of the consolidated **"Other Premises" group, which stands as the second largest overall at 21.77%**. This substantial percentage indicates that while a few types of locations dominate, a significant portion of crimes occur across a wide variety of less frequent or highly specific settings that are aggregated into this category. This highlights the diverse and distributed nature of crime locations beyond just the most common types.
+
+**Visualization: Percentage of Crime Incidents by Premise Type**
+The bar chart below illustrates the percentage distribution of crime incidents across the consolidated premise types. The specific premise types are ordered by their frequency, with the "Other Premises" category intentionally placed at the end to provide a clear summary of all less common locations, allowing for better focus on the most prevalent crime environments.
+
+[![Percentage of Crime Incidents by Premise Type (2020-2023)](LA_Crime_Premise_Distribution.png)](LA_Crime_Premise_Distribution.png)
+
+This analysis provides a clear overview of the primary environments where crimes occur in Los Angeles, emphasizing both dominant locations and the collective significance of a wide array of other settings.
+
 ## Google Colab Notebook
 [Link to Live Colab Notebook](https://github.com/vonlanot/los-angeles-crimes/blob/main/LA_Crime_Notebook.ipynb)
 
